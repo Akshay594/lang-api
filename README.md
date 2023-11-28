@@ -72,3 +72,37 @@ Contributions to this project are welcome. Please ensure to update tests as appr
 
 Your Name - gopalsinghpanwar411@gmail.com
 
+# Adding Zappa with AWS Lambda production instructions to the README.md content
+
+## Deploying to AWS Lambda with Zappa
+
+This application can be deployed to AWS Lambda using Zappa, which makes it easy to build and deploy serverless Python applications.
+
+### Prerequisites for AWS Lambda Deployment
+
+- An AWS account with appropriate permissions.
+- AWS CLI installed and configured.
+- Zappa installed (`pip install zappa`).
+
+### Zappa Configuration
+
+1. **Initialize Zappa:** Run `zappa init` in the project directory. This will guide you through creating a `zappa_settings.json` file.
+
+2. **Customize `zappa_settings.json`:** Modify the generated `zappa_settings.json` file as needed for your deployment settings.
+
+### Deployment
+
+1. **Deploy with Zappa:** Run `zappa deploy` to deploy your application to AWS Lambda.
+
+2. **Update the Application:** If you make changes, use `zappa update` to update the application on AWS Lambda.
+
+3. **Access the Application:** Once deployed, Zappa will provide you with a URL to access your application.
+
+### Additional Zappa Commands
+
+- **Rollback:** To rollback to a previous version, use `zappa rollback`.
+- **Monitoring:** Use `zappa status` to monitor the status of your deployment.
+- **Undeploy:** Use `zappa undeploy` to remove the application from AWS Lambda.
+
+For more information on Zappa and its commands, visit the [Zappa GitHub repository](https://github.com/Miserlou/Zappa).
+"""
